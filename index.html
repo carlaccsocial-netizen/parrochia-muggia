@@ -1,39 +1,150 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parrocchia San Giovanni</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parrocchia San Giovanni</title>
+
+<!-- Tailwind CSS moderno -->
+<script src="https://cdn.tailwindcss.com"></script>
+
 </head>
+
 <body class="bg-gray-100">
 
-    <header class="bg-blue-600 p-4 text-white text-center">
-        <h1 class="text-3xl font-bold">Parrocchia San Giovanni</h1>
-    </header>
+	<!-- NAVBAR -->
+	<nav id="navbar"
+		class="fixed top-0 left-0 w-full z-50 bg-white/20 backdrop-blur-lg transition-all duration-300">
+		<div
+			class="container mx-auto flex justify-between items-center p-4 text-white">
+			<h1 class="text-xl font-bold drop-shadow">Parrocchia San
+				Giovanni</h1>
+			<ul class="hidden md:flex space-x-6 font-medium">
+				<li><a href="#" class="hover:text-gray-200">Home</a></li>
+				<li><a href="#chi" class="hover:text-gray-200">Chi siamo</a></li>
+				<li><a href="#associazioni" class="hover:text-gray-200">Associazioni</a></li>
+				<li><a href="#eventi" class="hover:text-gray-200">Eventi</a></li>
+				<li><a href="#orari" class="hover:text-gray-200">Orari</a></li>
+				<li><a href="#contatti" class="hover:text-gray-200">Contatti</a></li>
+			</ul>
+		</div>
+	</nav>
 
-    <main class="container mx-auto my-8 p-4 bg-white rounded-lg shadow-md">
-        <img src="path/to/your/image.jpg" alt="Parrocchia" class="w-full h-64 object-cover rounded-lg mb-4">
+	<!-- HERO -->
+	<header id="hero">
+		<img src="parrocchia.jpg" alt="Parrocchia"
+			class="w-full h-64 md:h-96 object-cover">
+	</header>
 
-        <section class="mb-6">
-            <h2 class="text-2xl font-semibold mb-2">Contatti</h2>
-            <p>Email: <a href="mailto:info@parrocchiasangiovanni.it" class="text-blue-500">info@parrocchiasangiovanni.it</a></p>
-            <p>Telefono: <a href="tel:+390123456789" class="text-blue-500">+39 012 345 6789</a></p>
-        </section>
+	<!-- MAIN -->
+	<main class="container mx-auto my-8 p-4">
 
-        <section>
-            <h2 class="text-2xl font-semibold mb-2">Orari della Messa</h2>
-            <ul class="list-disc list-inside">
-                <li>Domenica: 10:00, 18:00</li>
-                <li>Feriali: 08:00, 18:00</li>
-                <li>Festivi: 09:00, 11:00</li>
-            </ul>
-        </section>
-    </main>
+		<section id="chi" class="bg-white p-6 rounded-lg shadow mb-6">
+			<h2 class="text-2xl font-semibold mb-2">Chi siamo</h2>
+			<p>La Parrocchia San Giovanni è un luogo di fede, accoglienza e
+				comunità.</p>
+		</section>
 
-    <footer class="bg-gray-200 text-center p-4">
-        <p>© 2026 Parrocchia San Giovanni. Tutti i diritti riservati.</p>
-    </footer>
+		<section id="associazioni" class="bg-white p-6 rounded-lg shadow mb-6">
+			<h2 class="text-2xl font-semibold mb-2">Associazioni</h2>
+			<ul class="list-disc list-inside">
+				<li>Gruppo Giovani</li>
+				<li>Caritas Parrocchiale</li>
+				<li>Coro Liturgico</li>
+			</ul>
+		</section>
+
+		<section id="eventi" class="bg-white p-6 rounded-lg shadow mb-6">
+			<h2 class="text-2xl font-semibold mb-2">Eventi</h2>
+			<ul class="list-disc list-inside">
+				<li>Festa Patronale</li>
+				<li>Incontri Giovani</li>
+				<li>Raccolta alimentare</li>
+			</ul>
+		</section>
+
+		<section id="orari" class="bg-white p-6 rounded-lg shadow mb-6">
+			<h2 class="text-2xl font-semibold mb-2">Orari della Messa</h2>
+			<ul class="list-disc list-inside">
+				<li>Domenica: 10:00, 18:00</li>
+				<li>Feriali: 08:00, 18:00</li>
+			</ul>
+		</section>
+
+		<section id="contatti" class="bg-white p-6 rounded-lg shadow">
+			<h2 class="text-2xl font-semibold mb-2">Contatti</h2>
+			<p>
+				Email: <a href="mailto:info@parrocchiasangiovanni.it"
+					class="text-blue-500">info@parrocchiasangiovanni.it</a>
+			</p>
+			<p>
+				Tel: <a href="tel:+390123456789" class="text-blue-500">+39 012
+					345 6789</a>
+			</p>
+		</section>
+
+	</main>
+
+	<!-- FOOTER -->
+	<footer id="footer" class="text-white transition-all duration-300">
+		<div class="container mx-auto p-6 grid md:grid-cols-3 gap-6">
+
+			<div>
+				<h3 class="text-lg font-semibold mb-2">Contatti</h3>
+				<p>Email: info@parrocchiasangiovanni.it</p>
+				<p>Tel: +39 012 345 6789</p>
+			</div>
+
+			<div>
+				<h3 class="text-lg font-semibold mb-2">Orari</h3>
+				<p>Domenica: 10:00 - 18:00</p>
+				<p>Feriali: 08:00 - 18:00</p>
+			</div>
+
+			<div>
+				<h3 class="text-lg font-semibold mb-2">Dove siamo</h3>
+
+				<!-- Link alla mappa ufficiale con pin -->
+				<a
+					href="https://www.google.com/maps/place/Calle+Luca+Farra,+1,+34015+Muggia+TS,+Italia"
+					target="_blank" rel="noopener noreferrer"> <iframe
+						class="w-full h-40 rounded pointer-events-none"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.613458747677!2d13.765094315646604!3d45.60425217910144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ad1e6da3eb5df%3A0x7cd88cd61b02e5b4!2sCalle%20Luca%20Farra%201%2C%2034015%20Muggia%20TS%2C%20Italia!5e0!3m2!1sit!2sit!4v1700000000000!5m2!1sit!2sit"
+						allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"> </iframe>
+				</a>
+			</div>
+
+		</div>
+
+		<div class="text-center p-4 text-sm">© 2026 Parrocchia San
+			Giovanni</div>
+	</footer>
+
+	<script>
+const navbar = document.getElementById("navbar");
+const footer = document.getElementById("footer");
+const hero = document.getElementById("hero");
+
+window.addEventListener("scroll", () => {
+    const heroHeight = hero.offsetHeight;
+
+    if (window.scrollY > heroHeight - 80) {
+        // Navbar
+        navbar.classList.remove("bg-white/20", "backdrop-blur-lg");
+        navbar.classList.add("bg-gradient-to-r", "from-amber-900", "via-amber-800", "to-amber-700", "shadow-lg");
+        // Footer
+        footer.classList.add("bg-gradient-to-r", "from-amber-900", "via-amber-800", "to-amber-700");
+    } else {
+        // Navbar
+        navbar.classList.add("bg-white/20", "backdrop-blur-lg");
+        navbar.classList.remove("bg-gradient-to-r", "from-amber-900", "via-amber-800", "to-amber-700", "shadow-lg");
+        // Footer
+        footer.classList.remove("bg-gradient-to-r", "from-amber-900", "via-amber-800", "to-amber-700");
+        footer.classList.add("bg-gray-900");
+    }
+});
+</script>
 
 </body>
 </html>
