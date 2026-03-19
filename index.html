@@ -22,7 +22,7 @@
 			<ul class="hidden md:flex space-x-6 font-medium">
 				<li><a href="#" class="hover:text-gray-200">Home</a></li>
 				<li><a href="#chi" class="hover:text-gray-200">Chi siamo</a></li>
-				<li><a href="associazioni.html" class="hover:text-gray-200">Associazioni</a></li>
+				<li><a href="#associazioni" class="hover:text-gray-200">Associazioni</a></li>
 				<li><a href="#eventi" class="hover:text-gray-200">Eventi</a></li>
 				<li><a href="#orari" class="hover:text-gray-200">Orari</a></li>
 				<li><a href="#contatti" class="hover:text-gray-200">Contatti</a></li>
@@ -48,7 +48,7 @@
 		<section id="associazioni" class="bg-white p-6 rounded-lg shadow mb-6">
 			<h2 class="text-2xl font-semibold mb-2">Associazioni</h2>
 			<ul class="list-disc list-inside">
-				<li>Gruppo Giovani</li>
+				<li><a href="gruppoGiovani.html">Gruppo Giovani</a></li>
 				<li>Caritas Parrocchiale</li>
 				<li>Coro Liturgico</li>
 			</ul>
@@ -122,29 +122,29 @@
 	</footer>
 
 	<script>
-const navbar = document.getElementById("navbar");
-const footer = document.getElementById("footer");
-const hero = document.getElementById("hero");
-
-window.addEventListener("scroll", () => {
-    const heroHeight = hero.offsetHeight;
-
-    if (window.scrollY > heroHeight - 80) {
-        // Navbar
-        navbar.classList.remove("bg-white/20", "backdrop-blur-lg");
-        navbar.classList.add("bg-gradient-to-r", "from-amber-900", "via-amber-800", "to-amber-700", "shadow-lg");
-        // Footer
-        footer.classList.add("bg-gradient-to-r", "from-amber-900", "via-amber-800", "to-amber-700");
-    } else {
-        // Navbar
-        navbar.classList.add("bg-white/20", "backdrop-blur-lg");
-        navbar.classList.remove("bg-gradient-to-r", "from-amber-900", "via-amber-800", "to-amber-700", "shadow-lg");
-        // Footer
-        footer.classList.remove("bg-gradient-to-r", "from-amber-900", "via-amber-800", "to-amber-700");
-        footer.classList.add("bg-gray-900");
-    }
-});
-</script>
+		const navbar = document.getElementById("navbar");
+		const footer = document.getElementById("footer");
+		const hero = document.getElementById("hero");
+		
+		window.addEventListener("scroll", () => {
+		    const heroHeight = hero.offsetHeight;
+		
+		    if (window.scrollY > heroHeight - 80) {
+		        // Navbar
+		        navbar.classList.remove("bg-white/20", "backdrop-blur-lg");
+		        navbar.classList.add("bg-gradient-to-r", "from-amber-900", "via-amber-800", "to-amber-700", "shadow-lg");
+		        // Footer
+		        footer.classList.add("bg-gradient-to-r", "from-amber-900", "via-amber-800", "to-amber-700");
+		    } else {
+		        // Navbar
+		        navbar.classList.add("bg-white/20", "backdrop-blur-lg");
+		        navbar.classList.remove("bg-gradient-to-r", "from-amber-900", "via-amber-800", "to-amber-700", "shadow-lg");
+		        // Footer
+		        footer.classList.remove("bg-gradient-to-r", "from-amber-900", "via-amber-800", "to-amber-700");
+		        footer.classList.add("bg-gray-900");
+		    }
+		});
+	</script>
 
 </body>
 </html>
