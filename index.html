@@ -5,107 +5,154 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Parrocchia San Giovanni</title>
 
-<!-- Tailwind CSS moderno -->
 <script src="https://cdn.tailwindcss.com"></script>
 
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+@keyframes float {
+0%{transform:translate(0,0)}
+50%{transform:translate(40px,-30px)}
+100%{transform:translate(0,0)}
+}
+.blob{animation:float 12s infinite}
+
+@keyframes fadeUp {
+  from {opacity:0; transform:translateY(30px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+.animate-fadeUp {
+  animation: fadeUp 1s ease forwards;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+</style>
 </head>
 
 <body class="bg-gray-100">
 
-	<!-- NAVBAR -->
-	<nav id="navbar"
-		class="fixed top-0 left-0 w-full z-50 bg-white/20 backdrop-blur-lg transition-all duration-300">
-		<div
-			class="container mx-auto flex justify-between items-center p-4 text-white">
-			<h1 class="text-xl font-bold drop-shadow">Parrocchia San
-				Giovanni</h1>
-			<ul class="hidden md:flex space-x-6 font-medium">
-				<li><a href="#" class="hover:text-gray-200">Home</a></li>
-				<li><a href="#chi" class="hover:text-gray-200">Chi siamo</a></li>
-				<li><a href="associazioni.html" class="hover:text-gray-200">Associazioni</a></li>
-				<li><a href="#eventi" class="hover:text-gray-200">Eventi</a></li>
-				<li><a href="#orari" class="hover:text-gray-200">Orari</a></li>
-				<li><a href="#contatti" class="hover:text-gray-200">Contatti</a></li>
-			</ul>
-		</div>
-	</nav>
+<!-- NAVBAR -->
+<nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white/20 backdrop-blur-lg transition-all duration-300">
+  <div class="container mx-auto flex justify-between items-center p-4 text-white">
+    <h1 class="text-xl font-bold">Parrocchia San Giovanni</h1>
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="#">Home</a></li>
+      <li><a href="#chi">Chi siamo</a></li>
+      <li><a href="#associazioni">Associazioni</a></li>
+      <li><a href="#orari">Orari</a></li>
+      <li><a href="#contatti">Contatti</a></li>
+    </ul>
+  </div>
+</nav>
 
-	<!-- HERO -->
-	<header id="hero" class="h-[65vh] bg-cover bg-[center_30%]"
-		style="background-image: url('immagini/sfondo.jpg');"> </header>
+<!-- HERO -->
+<header id="hero" class="h-[60vh] bg-cover flex items-end"
+style="background-image:url('immagini/sfondo.jpg'); background-position:center 55%;">
+  <div class="w-full bg-gradient-to-t from-black/80 to-transparent p-10">
+    <h1 class="text-5xl md:text-6xl text-white font-bold opacity-0 animate-fadeUp">
+      Parrocchia San Giovanni
+    </h1>
+    <p class="text-white/80 text-xl mt-2 opacity-0 animate-fadeUp delay-200">
+      Fede, comunità, crescita
+    </p>
+  </div>
+</header>
 
-	<!-- MAIN -->
-	<main class="container mx-auto my-8 p-4">
+<!-- BACKGROUND BLOBS -->
+<div class="relative overflow-hidden">
+<div class="blob absolute top-10 left-10 w-[350px] h-[350px] bg-blue-400 rounded-full blur-[120px] opacity-30"></div>
+<div class="blob absolute bottom-20 right-10 w-[350px] h-[350px] bg-purple-400 rounded-full blur-[120px] opacity-30"></div>
 
-		<section id="chi" class="bg-white p-6 rounded-lg shadow mb-6">
-			<h2 class="text-2xl font-semibold mb-2">Chi siamo</h2>
-			<p>La Parrocchia  San Giovanni è un luogo di fede, accoglienza e
-				comunità.</p>
-		</section>
+<main class="px-6 py-24 space-y-28 max-w-6xl mx-auto relative z-10">
 
-		<section id="associazioni" class="bg-white p-6 rounded-lg shadow mb-6">
-			<h2 class="text-2xl font-semibold mb-2">Associazioni</h2>
-			<ul class="list-disc list-inside">
-				<li><a href="gruppi/gruppo-giovani.html">Gruppo Giovani</a></li>
-				<li><a href="gruppi/scout.html">Scout</a></li>
-				<li><a href="gruppi/gruppo-gesu-resorto.html">Gruppo Gesù Risorto</a></li>
-				<li><a href="gruppi/gruppo-catechismo.html">Gruppo Catechismo</a></li>
-				<li><a href="gruppi/gruppo-san-vincenzo.html">Gruppo San-Vincenzo</a></li>
-				
-			</ul>
-		</section>
+<!-- INTRO -->
+<section id="chi" class="text-center max-w-3xl mx-auto" data-aos="fade-up">
+  <p class="text-xl text-gray-700 leading-relaxed">
+  La Parrocchia San Giovanni è un luogo di fede, accoglienza e comunità, dove bambini, ragazzi e famiglie possono crescere insieme.
+  </p>
+</section>
 
-		<section id="eventi" class="bg-white p-6 rounded-lg shadow mb-6">
-			<h2 class="text-2xl font-semibold mb-2">Eventi</h2>
-			<ul class="list-disc list-inside">
-				<li>Festa Patronale</li>
-				<li>Incontri Giovani</li>
-				<li>Raccolta alimentare</li>
-			</ul>
-		</section>
+<!-- ASSOCIAZIONI -->
+<section id="associazioni">
+  <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Le nostre realtà</h2>
 
-		<section id="orari" class="bg-white p-6 rounded-lg shadow mb-6">
-			<h2 class="text-2xl font-semibold mb-2">Orari della Messa</h2>
-			<ul class="list-disc list-inside">
-				<li>Domenica: 10:00, 18:00</li>
-				<li>Feriali: 08:00, 18:00</li>
-			</ul>
-		</section>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-		<section id="contatti" class="bg-white p-6 rounded-lg shadow">
-			<h2 class="text-2xl font-semibold mb-2">Contatti</h2>
-			<p>
-				Email: <a href="mailto:info@parrocchiasangiovanni.it"
-					class="text-blue-500">info@parrocchiasangiovanni.it</a>
-			</p>
-			<p>
-				Tel: <a href="tel:+390123456789" class="text-blue-500">+39 012
-					345 6789</a>
-			</p>
-		</section>
+    <!-- CARD -->
+    <a href="gruppi/gruppo-catechismo.html" class="group" data-aos="zoom-in">
+      <div class="relative rounded-3xl overflow-hidden shadow-xl group-hover:shadow-2xl transition duration-300">
+        <img src="immagini/gc.png" class="h-64 w-full object-cover transition duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/40 flex items-end p-6">
+          <h3 class="text-white text-2xl font-bold">Catechismo</h3>
+        </div>
+      </div>
+    </a>
 
-	</main>
+    <a href="gruppi/gruppo-giovani.html" class="group" data-aos="zoom-in" data-aos-delay="100">
+      <div class="relative rounded-3xl overflow-hidden shadow-xl group-hover:shadow-2xl transition duration-300">
+        <img src="immagini/gg.png" class="h-64 w-full object-cover transition duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/40 flex items-end p-6">
+          <h3 class="text-white text-2xl font-bold">Gruppo Giovani</h3>
+        </div>
+      </div>
+    </a>
 
-	<!-- FOOTER -->
-	<footer id="footer" class="text-white transition-all duration-300 bg-gradient-to-r from-amber-900 via-amber-800 to-amber-700">
-		<div class="container mx-auto p-6 grid md:grid-cols-3 gap-6">
+    <a href="gruppi/gruppo-scout.html" class="group" data-aos="zoom-in" data-aos-delay="200">
+      <div class="relative rounded-3xl overflow-hidden shadow-xl group-hover:shadow-2xl transition duration-300">
+        <img src="immagini/scout.png" class="h-64 w-full object-cover transition duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/40 flex items-end p-6">
+          <h3 class="text-white text-2xl font-bold">Scout</h3>
+        </div>
+      </div>
+    </a>
 
-			<div>
-				<h3 class="text-lg font-semibold mb-2">Contatti</h3>
-				<p>Email: info@parrocchiasangiovanni.it</p>
-				<p>Tel: +39 012 345 6789</p>
-			</div>
+  </div>
+</section>
 
-			<div>
-				<h3 class="text-lg font-semibold mb-2">Orari</h3>
-				<p>Domenica: 10:00 - 18:00</p>
-				<p>Feriali: 08:00 - 18:00</p>
-			</div>
+<!-- ORARI -->
+<section id="orari" class="text-center" data-aos="fade-up">
+  <h2 class="text-3xl font-bold mb-6">Orari della Messa</h2>
+  <p class="text-lg text-gray-700">
+    Domenica: 10:00 – 18:00<br>
+    Feriali: 08:00 – 18:00
+  </p>
+</section>
 
-			<div>
-				<h3 class="text-lg font-semibold mb-2">Dove siamo</h3>
+<!-- CONTATTI -->
+<section id="contatti" class="text-center" data-aos="fade-up">
+  <h2 class="text-3xl font-bold mb-6">Contatti</h2>
+  <p class="text-lg text-gray-700">
+    Email: info@parrocchiasangiovanni.it<br>
+    Tel: +39 012 345 6789
+  </p>
+</section>
 
-				<!-- Link alla mappa ufficiale con pin -->
+</main>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-white bg-gradient-to-r from-amber-900 via-amber-800 to-amber-700">
+  <div class="container mx-auto p-6 grid md:grid-cols-3 gap-6">
+
+    <div>
+      <h3 class="text-lg font-semibold mb-2">Contatti</h3>
+      <p>Email: info@parrocchiasangiovanni.it</p>
+      <p>Tel: +39 012 345 6789</p>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-2">Orari</h3>
+      <p>Domenica: 10:00 - 18:00</p>
+      <p>Feriali: 08:00 - 18:00</p>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-2">Dove siamo</h3>
 				<a
 					href="https://www.google.com/maps/place/Calle+Luca+Farra,+1,+34015+Muggia+TS,+Italia"
 					target="_blank" rel="noopener noreferrer"> <iframe
@@ -114,32 +161,27 @@
 						allowfullscreen="" loading="lazy"
 						referrerpolicy="no-referrer-when-downgrade"> </iframe>
 				</a>
-			</div>
+    </div>
 
-		</div>
+  </div>
 
-		<div class="text-center p-4 text-sm">© 2026 Parrocchia San
-			Giovanni</div>
-	</footer>
+  <div class="text-center p-4 text-sm">© 2026 Parrocchia San Giovanni</div>
+</footer>
 
-	<script>
-		const navbar = document.getElementById("navbar");
-		const hero = document.getElementById("hero");
-		
-		window.addEventListener("scroll", () => {
-		    const heroHeight = hero.offsetHeight;
-		
-		    if (window.scrollY > heroHeight - 80) {
-		        // Navbar
-		        navbar.classList.remove("bg-white/20", "backdrop-blur-lg");
-		        navbar.classList.add("bg-gradient-to-r", "from-amber-900", "via-amber-800", "to-amber-700", "shadow-lg");
-		    } else {
-		        // Navbar
-		        navbar.classList.add("bg-white/20", "backdrop-blur-lg");
-		        navbar.classList.remove("bg-gradient-to-r", "from-amber-900", "via-amber-800", "to-amber-700", "shadow-lg");
-		    }
-		});
-	</script>
+<script>
+AOS.init({ duration: 1000, once: true });
+
+const navbar = document.getElementById("navbar");
+const hero = document.getElementById("hero");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > hero.offsetHeight - 80) {
+    navbar.classList.add("bg-amber-900");
+  } else {
+    navbar.classList.remove("bg-amber-900");
+  }
+});
+</script>
 
 </body>
 </html>
