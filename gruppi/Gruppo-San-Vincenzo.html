@@ -1,95 +1,142 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>San Vincenzo Trieste - Attività</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Vincenzo Trieste - Attività</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        @keyframes float {0%{transform:translate(0,0)} 50%{transform:translate(40px,-30px)} 100%{transform:translate(0,0)}}
+        .blob{animation:float 12s infinite}
+        .bg-san-vincenzo { background-color: #1d4ed8; } /* Blu istituzionale */
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
 
-  <!-- HERO -->
-  <section class="bg-blue-700 text-white py-16">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h1 class="text-4xl font-bold mb-4">San Vincenzo Trieste</h1>
-      <p class="text-lg">
-        Aiuto concreto alle persone in difficoltà attraverso ascolto,
-        supporto e solidarietà.
-      </p>
+<body class="bg-gray-100">
+
+<nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-lg transition-all duration-300">
+    <div class="container mx-auto flex justify-between items-center p-4 text-white">
+        <h1 class="text-2xl font-bold">San Vincenzo Trieste</h1>
+        <ul class="hidden md:flex space-x-6">
+            <li><a href="#" class="hover:text-blue-200 transition">Home</a></li>
+            <li><a href="#" class="hover:text-blue-200 transition">Attività</a></li>
+            <li><a href="#" class="hover:text-blue-200 transition">Contatti</a></li>
+        </ul>
     </div>
-  </section>
+</nav>
 
-  <!-- MISSION -->
-  <section class="py-12">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-2xl font-semibold mb-4">Missione</h2>
-      <p class="text-gray-700 leading-relaxed">
-        La Società di San Vincenzo de’ Paoli a Trieste opera per sostenere
-        i più fragili attraverso interventi diretti, basati su carità,
-        relazione personale e rispetto della dignità umana.
-      </p>
+<header id="hero" class="h-[60vh] bg-cover bg-center flex items-end relative" style="background-image:url('https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=2070&auto=format&fit=crop');">
+    <div class="w-full bg-gradient-to-t from-black/80 to-transparent p-10">
+        <h1 class="text-6xl font-bold text-white">San Vincenzo Trieste</h1>
+        <p class="text-white/80 text-xl mt-2 italic">Aiuto concreto, ascolto e solidarietà per la nostra comunità.</p>
     </div>
-  </section>
+</header>
 
-  <!-- ATTIVITÀ -->
-  <section class="bg-white py-12">
-    <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-2xl font-semibold mb-8 text-center">Attività principali</h2>
+<div class="relative overflow-hidden">
 
-      <div class="grid md:grid-cols-2 gap-6">
+    <div class="blob absolute top-10 left-10 w-[350px] h-[350px] bg-blue-300 rounded-full blur-[120px] opacity-30"></div>
+    <div class="blob absolute bottom-20 right-10 w-[350px] h-[350px] bg-sky-300 rounded-full blur-[120px] opacity-30"></div>
 
-        <div class="p-6 bg-gray-100 rounded-xl shadow">
-          <h3 class="font-bold text-lg mb-2">Centro di ascolto</h3>
-          <p>Supporto e colloqui per persone con difficoltà economiche e sociali.</p>
+    <main class="px-6 py-24 space-y-24 max-w-6xl mx-auto relative z-10">
+
+        <section data-aos="fade-up" class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-blue-800 mb-6">La nostra Missione</h2>
+            <p class="text-xl text-gray-700 leading-relaxed">
+                Operiamo a Trieste per sostenere i più fragili attraverso interventi diretti, basati sulla carità, la relazione personale e il rispetto assoluto della dignità umana.
+            </p>
+        </section>
+
+        <section class="grid md:grid-cols-2 gap-12 items-center">
+            
+            <div data-aos="fade-right" class="relative group">
+                <div class="absolute -inset-2 bg-gradient-to-r from-blue-400 to-sky-200 rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition"></div>
+                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2070&auto=format&fit=crop" 
+                     class="relative rounded-3xl shadow-xl h-[420px] w-full object-cover object-center" alt="Volontariato">
+            </div>
+
+            <div data-aos="fade-left" class="space-y-4">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Cosa Facciamo</h2>
+                
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="p-4 bg-white/60 backdrop-blur-md rounded-2xl shadow-sm border border-white hover:shadow-md transition">
+                        <h3 class="font-bold text-blue-700">Centro di ascolto</h3>
+                        <p class="text-gray-600 text-sm">Supporto e colloqui per persone con difficoltà economiche e sociali.</p>
+                    </div>
+                    <div class="p-4 bg-white/60 backdrop-blur-md rounded-2xl shadow-sm border border-white hover:shadow-md transition">
+                        <h3 class="font-bold text-blue-700">Distribuzione alimentare e vestiti</h3>
+                        <p class="text-gray-600 text-sm">Consegna di beni di prima necessità alle famiglie del territorio.</p>
+                    </div>
+                    <div class="p-4 bg-white/60 backdrop-blur-md rounded-2xl shadow-sm border border-white hover:shadow-md transition">
+                        <h3 class="font-bold text-blue-700">Visite a domicilio</h3>
+                        <p class="text-gray-600 text-sm">Incontri diretti per offrire supporto umano e vincere la solitudine.</p>
+                    </div>
+                    <div class="p-4 bg-white/60 backdrop-blur-md rounded-2xl shadow-sm border border-white hover:shadow-md transition">
+                        <h3 class="font-bold text-blue-700">Solidarietà Internazionale</h3>
+                        <p class="text-gray-600 text-sm">Sostegno a progetti e persone in difficoltà anche all’estero.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section data-aos="fade-up" class="bg-blue-800 rounded-[3rem] p-12 text-center text-white shadow-2xl">
+            <h2 class="text-3xl font-bold mb-6">Il nostro Metodo</h2>
+            <p class="text-xl opacity-90 max-w-3xl mx-auto leading-relaxed">
+                I nostri volontari operano nelle "Conferenze": piccoli gruppi che si incontrano per coordinare gli aiuti, mantenendo sempre un approccio umano, diretto e discreto verso ogni persona.
+            </p>
+        </section>
+
+    </main>
+</div>
+
+<footer class="text-white bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900">
+    <div class="container mx-auto p-10 grid md:grid-cols-3 gap-10">
+        <div>
+            <h3 class="text-lg font-semibold mb-4 border-b border-blue-400 pb-2">Contatti</h3>
+            <p class="opacity-80">Email: info@sanvincenzotrieste.it</p>
+            <p class="opacity-80">Sede Centrale: Trieste, Italia</p>
         </div>
 
-        <div class="p-6 bg-gray-100 rounded-xl shadow">
-          <h3 class="font-bold text-lg mb-2">Distribuzione alimentare</h3>
-          <p>Consegna di generi alimentari a famiglie in difficoltà.</p>
+        <div>
+            <h3 class="text-lg font-semibold mb-4 border-b border-blue-400 pb-2">Link Utili</h3>
+            <ul class="space-y-2 opacity-80 text-sm">
+                <li><a href="#" class="hover:underline">Chi Siamo</a></li>
+                <li><a href="#" class="hover:underline">Diventa Volontario</a></li>
+                <li><a href="#" class="hover:underline">Donazioni</a></li>
+            </ul>
         </div>
 
-        <div class="p-6 bg-gray-100 rounded-xl shadow">
-          <h3 class="font-bold text-lg mb-2">Distribuzione vestiti</h3>
-          <p>Raccolta e distribuzione di indumenti per chi ne ha bisogno.</p>
+        <div>
+            <h3 class="text-lg font-semibold mb-4 border-b border-blue-400 pb-2">Dove Siamo</h3>
+            <div class="rounded-xl overflow-hidden h-32 bg-gray-300">
+                <iframe class="w-full h-full opacity-80" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89162.15243164479!2d13.711802996944607!3d45.65219493132715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b6b06e3001813%3A0x2da8953f47e30730!2sTrieste%20TS!5e0!3m2!1sit!2sit!4v1710000000000!5m2!1sit!2sit"></iframe>
+            </div>
         </div>
-
-        <div class="p-6 bg-gray-100 rounded-xl shadow">
-          <h3 class="font-bold text-lg mb-2">Visite a domicilio</h3>
-          <p>Incontri diretti con le persone per offrire supporto umano e concreto.</p>
-        </div>
-
-        <div class="p-6 bg-gray-100 rounded-xl shadow">
-          <h3 class="font-bold text-lg mb-2">Aiuti economici</h3>
-          <p>Contributi per affrontare spese quotidiane e situazioni urgenti.</p>
-        </div>
-
-        <div class="p-6 bg-gray-100 rounded-xl shadow">
-          <h3 class="font-bold text-lg mb-2">Solidarietà internazionale</h3>
-          <p>Sostegno a progetti e persone in difficoltà anche all’estero.</p>
-        </div>
-
-      </div>
     </div>
-  </section>
-
-  <!-- METODO -->
-  <section class="py-12">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-2xl font-semibold mb-4">Come operiamo</h2>
-      <p class="text-gray-700 leading-relaxed">
-        I volontari operano in piccoli gruppi chiamati “conferenze”,
-        incontrandosi periodicamente per coordinare gli interventi e
-        mantenere un approccio umano e diretto verso ogni persona aiutata.
-      </p>
+    <div class="text-center p-6 text-sm border-t border-white/10 opacity-60">
+        © 2026 San Vincenzo Trieste - OdV
     </div>
-  </section>
+</footer>
 
-  <!-- FOOTER -->
-  <footer class="bg-gray-800 text-white py-6">
-    <div class="max-w-4xl mx-auto px-6 text-center text-sm">
-      © 2026 San Vincenzo Trieste - Attività solidali
-    </div>
-  </footer>
+<script>
+    AOS.init({duration:1000, once:true});
+
+    const navbar = document.getElementById("navbar");
+    const hero = document.getElementById("hero");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add("bg-blue-900", "shadow-lg");
+            navbar.classList.remove("bg-white/10");
+        } else {
+            navbar.classList.remove("bg-blue-900", "shadow-lg");
+            navbar.classList.add("bg-white/10");
+        }
+    });
+</script>
 
 </body>
 </html>
