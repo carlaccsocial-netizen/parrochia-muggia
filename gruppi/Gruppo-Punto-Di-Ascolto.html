@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Punto di Ascolto - Muggia</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+@keyframes float {0%{transform:translate(0,0)}50%{transform:translate(40px,-30px)}100%{transform:translate(0,0)}}
+.blob{animation:float 12s infinite}
+</style>
+</head>
+
+<body class="bg-gray-100">
+
+<nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white/20 backdrop-blur-lg transition-all duration-300">
+  <div class="container mx-auto flex justify-between items-center p-4 text-white">
+    <h1 class="text-2xl font-bold">Caritas Trieste</h1>
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="#" class="hover:text-amber-200 transition">Home</a></li>
+      <li><a href="#" class="hover:text-amber-200 transition">Punto di Ascolto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header id="hero" class="h-[60vh] bg-cover bg-center flex items-end relative" style="background-image:url('https://images.unsplash.com/photo-1516880711640-ef7db81be3e1?q=80&w=2070');">
+  <div class="w-full bg-gradient-to-t from-black/80 to-transparent p-10">
+    <h1 class="text-6xl font-bold text-white uppercase">Punto di Ascolto</h1>
+    <p class="text-white/80 text-xl mt-2 italic">Un orecchio attento ed una voce amica per trovare assieme una soluzione[cite: 2].</p>
+  </div>
+</header>
+
+<div class="relative overflow-hidden">
+
+<div class="blob absolute top-10 left-10 w-[350px] h-[350px] bg-blue-400 rounded-full blur-[120px] opacity-20"></div>
+<div class="blob absolute bottom-20 right-10 w-[350px] h-[350px] bg-amber-400 rounded-full blur-[120px] opacity-20"></div>
+
+<main class="px-6 py-24 space-y-24 max-w-6xl mx-auto relative z-10">
+
+<section data-aos="fade-up" class="max-w-3xl mx-auto text-center">
+  <h2 class="text-4xl font-bold text-amber-900 mb-6">Non sei solo! [cite: 3]</h2>
+  <p class="text-xl text-gray-700 leading-relaxed">
+    Il Punto di Ascolto è una "porta aperta al territorio" [cite: 36] che offre un servizio di accoglienza, ascolto, condivisione e accompagnamento[cite: 31]. I nostri volontari sono pronti a orientare chi ha bisogno di aiuto verso le soluzioni più indicate[cite: 23, 41].
+  </p>
+</section>
+
+<section class="grid md:grid-cols-3 gap-8">
+  <div data-aos="zoom-in" data-aos-delay="100" class="p-8 bg-white/60 backdrop-blur-md rounded-3xl shadow-xl border border-white">
+    <h3 class="text-2xl font-bold text-amber-800 mb-4">Accoglienza [cite: 37]</h3>
+    <p class="text-gray-600">Accogliere incondizionatamente la persona nella sua integrità senza nessuna distinzione[cite: 37].</p>
+  </div>
+  <div data-aos="zoom-in" data-aos-delay="200" class="p-8 bg-white/60 backdrop-blur-md rounded-3xl shadow-xl border border-white">
+    <h3 class="text-2xl font-bold text-amber-800 mb-4">Ascolto [cite: 38]</h3>
+    <p class="text-gray-600">Instaurare un rapporto di fiducia ascoltando con attenzione i racconti di sofferenza[cite: 39, 40].</p>
+  </div>
+  <div data-aos="zoom-in" data-aos-delay="300" class="p-8 bg-white/60 backdrop-blur-md rounded-3xl shadow-xl border border-white">
+    <h3 class="text-2xl font-bold text-amber-800 mb-4">Orientamento [cite: 41]</h3>
+    <p class="text-gray-600">Analizzare i problemi complessi per indirizzare verso le risorse del territorio[cite: 41].</p>
+  </div>
+</section>
+
+<section class="grid md:grid-cols-2 gap-12 items-center bg-amber-900/5 p-12 rounded-[3rem]">
+  <div data-aos="fade-right">
+    <h2 class="text-4xl font-bold text-amber-900 mb-6">Vieni a trovarci! [cite: 4]</h2>
+    <div class="space-y-6 text-lg">
+      <div class="flex items-start space-x-4">
+        <div class="bg-amber-600 text-white p-3 rounded-2xl">📅</div>
+        <div>
+          <p class="font-bold">Martedì: 16:00 - 18:00 [cite: 5, 27]</p>
+          <p>Presso l'Ufficio parrocchiale, 2° piano [cite: 7, 17, 27]</p>
+          <p class="text-sm text-gray-500 italic">Via G. Tonello, 2/A - Muggia [cite: 6]</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4">
+        <div class="bg-amber-600 text-white p-3 rounded-2xl">☕</div>
+        <div>
+          <p class="font-bold">Venerdì: 15:45 - 17:00 [cite: 28]</p>
+          <p>In Sala "Fratelli Tutti" (In Cattolica) [cite: 28]</p>
+          <p class="text-sm text-gray-500 italic">Un'occasione per incontrarci e bere un caffè! [cite: 24]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-aos="fade-left" class="relative group">
+    <div class="absolute -inset-2 bg-gradient-to-r from-amber-400 to-orange-300 rounded-3xl blur-xl opacity-40"></div>
+    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070" class="relative rounded-3xl shadow-2xl h-80 w-full object-cover">
+  </div>
+</section>
+
+</main>
+</div>
+
+<footer class="text-white bg-gradient-to-r from-amber-950 via-amber-900 to-amber-800 p-12">
+  <div class="container mx-auto grid md:grid-cols-2 gap-12">
+    <div>
+      <h3 class="text-2xl font-bold mb-4">Punto di Ascolto Muggia</h3>
+      <p class="opacity-80 mb-4">Fondazione Diocesana Onlus - Caritas Trieste [cite: 9, 10, 14]</p>
+      <p class="font-semibold">📧 Email: <a href="mailto:puntoascoltomuggia@caritastrieste.it" class="underline">puntoascoltomuggia@caritastrieste.it</a> [cite: 30]</p>
+    </div>
+    <div class="text-right">
+      <p class="italic font-light">"L'efficacia non si misura nel numero delle situazioni risolte, ma nella costruzione di una comunità capace di condividere." [cite: 47]</p>
+    </div>
+  </div>
+  <div class="text-center mt-12 pt-6 border-t border-white/10 opacity-50 text-sm">
+    © 2026 Parrocchia Santi Giovanni e Paolo & S. Maria Assunta [cite: 18, 19]
+  </div>
+</footer>
+
+<script>
+AOS.init({duration:1000, once:true});
+
+const navbar = document.getElementById("navbar");
+const hero = document.getElementById("hero");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    navbar.classList.add("bg-amber-900", "shadow-xl");
+    navbar.classList.remove("bg-white/20");
+  } else {
+    navbar.classList.remove("bg-amber-900", "shadow-xl");
+    navbar.classList.add("bg-white/20");
+  }
+});
+</script>
+
+</body>
+</html>
