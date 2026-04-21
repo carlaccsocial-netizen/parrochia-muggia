@@ -1,129 +1,146 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comunità Gesù Risorto</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<style>
-@keyframes float {
-  0% {transform: translate(0,0)}
-  50% {transform: translate(40px,-30px)}
-  100% {transform: translate(0,0)}
-}
-.blob {
-  animation: float 14s infinite ease-in-out;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Comunità Gesù Risorto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @keyframes float {
+            0% {
+                transform: translate(0, 0)
+            }
+            50% {
+                transform: translate(40px, -30px)
+            }
+            100% {
+                transform: translate(0, 0)
+            }
+        }
+
+        .blob {
+            animation: float 14s infinite ease-in-out;
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
-	<!-- NAVBAR -->
-	<nav id="navbar"
-		class="fixed top-0 left-0 w-full z-50 bg-white/20 backdrop-blur-lg transition-all duration-300">
-		<div
-			class="container mx-auto flex justify-between items-center p-4 text-white">
-			<h1 class="text-2xl font-bold">Parrocchia San Giovanni</h1>
-			<ul class="hidden md:flex space-x-6">
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../associazioni.html">Associazioni</a></li>
-			</ul>
-		</div>
-	</nav>
-	<!-- HERO -->
-	<header id="hero"
-		class="h-[60vh] bg-cover bg-center flex items-end relative"
-		style="background-image: url('../immagini/ggr.png'); background-position: center 40%;">
-		<div class="w-full bg-gradient-to-t from-black/80 to-transparent p-10">
-			<h1 class="text-6xl font-bold text-white">Comunità Gesù Risorto</h1>
-			<p class="text-white/80 text-xl mt-2">Lode, evangelizzazione e
-				vita nello Spirito</p>
-		</div>
-	</header>
-	<!-- CONTENUTO -->
-	<div class="relative overflow-hidden">
-		<!-- BLOB DECORATIVI -->
-		<div
-			class="blob absolute top-10 left-10 w-[350px] h-[350px] bg-blue-400 rounded-full blur-[120px] opacity-30"></div>
-		<div
-			class="blob absolute bottom-20 right-10 w-[350px] h-[350px] bg-purple-400 rounded-full blur-[120px] opacity-30"></div>
-		<main class="px-6 py-24 space-y-24 max-w-6xl mx-auto relative z-10">
-			<!-- INTRO -->
-			<section data-aos="fade-up" class="max-w-3xl mx-auto text-center">
-				<p class="text-xl text-gray-700 leading-relaxed">La Comunità
-					Gesù Risorto fa parte del Rinnovamento Carismatico Cattolico, una
-					corrente di grazia che aiuta a vivere una relazione viva con Dio
-					attraverso lo Spirito Santo.</p>
-			</section>
-			<!-- IMMAGINE + TESTO -->
-			<section class="grid md:grid-cols-2 gap-12 items-center">
-				<!-- IMMAGINE -->
-				<div data-aos="fade-right" class="relative group">
-					<div
-						class="absolute -inset-2 bg-gradient-to-r from-blue-300 via-purple-200 to-amber-200 rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition"></div>
-					<img src="../immagini/ggr2.jpeg"
-						class="relative rounded-3xl shadow-xl h-[450px] w-full object-cover object-center">
-				</div>
-				<!-- TESTO -->
-				<div data-aos="fade-left"
-					class="space-y-6 text-gray-700 text-lg leading-relaxed">
-					<p>La comunità nasce con l’obiettivo di formare gruppi di lode
-						ed evangelizzazione, che vivano e testimonino la presenza di
-						Cristo risorto nel mondo.</p>
-					<p>Attraverso la preghiera, il canto e l’ascolto dello Spirito
-						Santo, ogni persona è accompagnata a riscoprire l’amore di Gesù,
-						capace di guarire, liberare e dare nuova speranza.</p>
-					<p class="font-semibold text-amber-700">“Essere Gesù insieme”:
-						lasciarsi trasformare da Lui nella vita quotidiana.</p>
-				</div>
-			</section>
-			<!-- ATTIVITÀ -->
-			<section data-aos="fade-up" class="max-w-4xl mx-auto text-center">
-				<p class="text-xl text-gray-700 leading-relaxed">La comunità si
-					riunisce ogni lunedì per momenti di preghiera e condivisione.
-					Organizza seminari sulla fede, incontri di crescita spirituale e
-					momenti di intercessione per le necessità dei fedeli.</p>
-			</section>
-			<!-- INFO -->
-			<section data-aos="fade-up" class="text-center">
-				<h2 class="text-3xl font-bold mb-4">Orari e luogo</h2>
-				<p class="text-gray-700 text-lg">
-					Lunedì 17:00 – 18:15<br> Oratorio (inverno) • Chiesa San
-					Francesco (estate)
-				</p>
-			</section>
-		</main>
-	</div>
-	<!-- FOOTER -->
-	<footer
-		class="text-white bg-gradient-to-r from-amber-900 via-amber-800 to-amber-700">
-		<div class="container mx-auto p-6 grid md:grid-cols-3 gap-6">
-			<div>
-				<h3 class="text-lg font-semibold mb-2">Contatti</h3>
-				<p>Email: info@parrocchiasangiovanni.it</p>
-				<p>Tel: +39 012 345 6789</p>
-				<div class="mt-4">
-					<p class="font-semibold">Comunità:</p>
-					<p>Michela Russo • 3928234913</p>
-					<p>Galliano Michieli • 3284071059</p>
-				</div>
-			</div>
-			<div>
-				<h3 class="text-lg font-semibold mb-2">Orari</h3>
-				<p>Domenica: 10:00 - 18:00</p>
-				<p>Feriali: 08:00 - 18:00</p>
-			</div>
-			<div>
-				<h3 class="text-lg font-semibold mb-2">Dove siamo</h3>
-				<iframe class="w-full h-40 rounded"
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.613458747677!2d13.765094315646604!3d45.60425217910144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ad1e6da3eb5df%3A0x7cd88cd61b02e5b4!2sCalle%20Luca%20Farra%201%2C%2034015%20Muggia%20TS%2C%20Italia!5e0!3m2!1sit!2sit!4v1700000000000!5m2!1sit!2sit"
-					loading="lazy"></iframe>
-			</div>
-		</div>
-		<div class="text-center p-4 text-sm">© 2026 Parrocchia San
-			Giovanni</div>
-	</footer>
-	<script> AOS.init({duration:1000,once:true}); const navbar = document.getElementById("navbar"); const hero = document.getElementById("hero"); window.addEventListener("scroll", () => { if (window.scrollY > hero.offsetHeight - 80) { navbar.classList.add("bg-amber-900"); } else { navbar.classList.remove("bg-amber-900"); } }); </script>
+<!-- NAVBAR -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-white/20 backdrop-blur-lg transition-all duration-300"
+     id="navbar">
+    <div
+            class="container mx-auto flex justify-between items-center p-4 text-white">
+        <h1 class="text-2xl font-bold">Parrocchia San Giovanni</h1>
+        <ul class="hidden md:flex space-x-6">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../associazioni.html">Associazioni</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- HERO -->
+<header class="h-[60vh] bg-cover bg-center flex items-end relative"
+        id="hero"
+        style="background-image: url('../immagini/ggr.png'); background-position: center 40%;">
+    <div class="w-full bg-gradient-to-t from-black/80 to-transparent p-10">
+        <h1 class="text-6xl font-bold text-white">Comunità Gesù Risorto</h1>
+        <p class="text-white/80 text-xl mt-2">Lode, evangelizzazione e
+            vita nello Spirito</p>
+    </div>
+</header>
+<!-- CONTENUTO -->
+<div class="relative overflow-hidden">
+    <!-- BLOB DECORATIVI -->
+    <div
+            class="blob absolute top-10 left-10 w-[350px] h-[350px] bg-blue-400 rounded-full blur-[120px] opacity-30"></div>
+    <div
+            class="blob absolute bottom-20 right-10 w-[350px] h-[350px] bg-purple-400 rounded-full blur-[120px] opacity-30"></div>
+    <main class="px-6 py-24 space-y-24 max-w-6xl mx-auto relative z-10">
+        <!-- INTRO -->
+        <section class="max-w-3xl mx-auto text-center" data-aos="fade-up">
+            <p class="text-xl text-gray-700 leading-relaxed">La Comunità
+                Gesù Risorto fa parte del Rinnovamento Carismatico Cattolico, una
+                corrente di grazia che aiuta a vivere una relazione viva con Dio
+                attraverso lo Spirito Santo.</p>
+        </section>
+        <!-- IMMAGINE + TESTO -->
+        <section class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- IMMAGINE -->
+            <div class="relative group" data-aos="fade-right">
+                <div
+                        class="absolute -inset-2 bg-gradient-to-r from-blue-300 via-purple-200 to-amber-200 rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition"></div>
+                <img class="relative rounded-3xl shadow-xl h-[450px] w-full object-cover object-center"
+                     src="../immagini/ggr2.jpeg">
+            </div>
+            <!-- TESTO -->
+            <div class="space-y-6 text-gray-700 text-lg leading-relaxed"
+                 data-aos="fade-left">
+                <p>La comunità nasce con l’obiettivo di formare gruppi di lode
+                    ed evangelizzazione, che vivano e testimonino la presenza di
+                    Cristo risorto nel mondo.</p>
+                <p>Attraverso la preghiera, il canto e l’ascolto dello Spirito
+                    Santo, ogni persona è accompagnata a riscoprire l’amore di Gesù,
+                    capace di guarire, liberare e dare nuova speranza.</p>
+                <p class="font-semibold text-amber-700">“Essere Gesù insieme”:
+                    lasciarsi trasformare da Lui nella vita quotidiana.</p>
+            </div>
+        </section>
+        <!-- ATTIVITÀ -->
+        <section class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+            <p class="text-xl text-gray-700 leading-relaxed">La comunità si
+                riunisce ogni lunedì per momenti di preghiera e condivisione.
+                Organizza seminari sulla fede, incontri di crescita spirituale e
+                momenti di intercessione per le necessità dei fedeli.</p>
+        </section>
+        <!-- INFO -->
+        <section class="text-center" data-aos="fade-up">
+            <h2 class="text-3xl font-bold mb-4">Orari e luogo</h2>
+            <p class="text-gray-700 text-lg">
+                Lunedì 17:00 – 18:15<br> Oratorio (inverno) • Chiesa San
+                Francesco (estate)
+            </p>
+        </section>
+    </main>
+</div>
+<!-- FOOTER -->
+<footer
+        class="text-white bg-gradient-to-r from-amber-900 via-amber-800 to-amber-700">
+    <div class="container mx-auto p-6 grid md:grid-cols-3 gap-6">
+        <div>
+            <h3 class="text-lg font-semibold mb-2">Contatti</h3>
+            <p>Email: info@parrocchiasangiovanni.it</p>
+            <p>Tel: +39 012 345 6789</p>
+            <div class="mt-4">
+                <p class="font-semibold">Comunità:</p>
+                <p>Michela Russo • 3928234913</p>
+                <p>Galliano Michieli • 3284071059</p>
+            </div>
+        </div>
+        <div>
+            <h3 class="text-lg font-semibold mb-2">Orari</h3>
+            <p>Domenica: 10:00 - 18:00</p>
+            <p>Feriali: 08:00 - 18:00</p>
+        </div>
+        <div>
+            <h3 class="text-lg font-semibold mb-2">Dove siamo</h3>
+            <iframe class="w-full h-40 rounded"
+                    loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.613458747677!2d13.765094315646604!3d45.60425217910144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ad1e6da3eb5df%3A0x7cd88cd61b02e5b4!2sCalle%20Luca%20Farra%201%2C%2034015%20Muggia%20TS%2C%20Italia!5e0!3m2!1sit!2sit!4v1700000000000!5m2!1sit!2sit"></iframe>
+        </div>
+    </div>
+    <div class="text-center p-4 text-sm">© 2026 Parrocchia San
+        Giovanni
+    </div>
+</footer>
+<script> AOS.init({duration: 1000, once: true});
+const navbar = document.getElementById("navbar");
+const hero = document.getElementById("hero");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > hero.offsetHeight - 80) {
+        navbar.classList.add("bg-amber-900");
+    } else {
+        navbar.classList.remove("bg-amber-900");
+    }
+}); </script>
 </body>
 </html>

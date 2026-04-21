@@ -1,184 +1,179 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coro Adulti</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Coro Adulti</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<style>
-@
-keyframes float { 0%{
-	transform: translate(0, 0)
-}
+    <style>
+        @
+        keyframes float {
+            0% {
+                transform: translate(0, 0)
+            }
 
-50
-%
-{
-transform
-:
-translate(
-40px
-,
--30px
-)
-}
-100
-%
-{
-transform
-:
-translate(
-0
-,
-0
-)
-}
-}
-.blob {
-	animation: float 12s infinite
-}
-</style>
+            50% {
+                transform: translate(
+                        40px,
+                        -30px
+                )
+            }
+
+            100% {
+                transform: translate(
+                        0,
+                        0
+                )
+            }
+        }
+
+        .blob {
+            animation: float 12s infinite
+        }
+    </style>
 </head>
 
 <body class="bg-gray-100">
 
-	<!-- NAVBAR -->
-	<nav id="navbar"
-		class="fixed top-0 left-0 w-full z-50 bg-white/20 backdrop-blur-lg transition-all duration-300">
-		<div
-			class="container mx-auto flex justify-between items-center p-4 text-white">
-			<h1 class="text-2xl font-bold">Parrocchia San Giovanni</h1>
-			<ul class="hidden md:flex space-x-6">
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../associazioni.html">Associazioni</a></li>
-			</ul>
-		</div>
-	</nav>
+<!-- NAVBAR -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-white/20 backdrop-blur-lg transition-all duration-300"
+     id="navbar">
+    <div
+            class="container mx-auto flex justify-between items-center p-4 text-white">
+        <h1 class="text-2xl font-bold">Parrocchia San Giovanni</h1>
+        <ul class="hidden md:flex space-x-6">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../associazioni.html">Associazioni</a></li>
+        </ul>
+    </div>
+</nav>
 
-	<!-- HERO -->
-	<header id="hero"
-		class="h-[60vh] bg-cover bg-center flex items-end relative"
-		style="background-image: url('../immagini/coro.jpg'); background-position: center;">
-		<div class="w-full bg-gradient-to-t from-black/80 to-transparent p-10">
-			<h1 class="text-6xl font-bold text-white">Coro Adulti</h1>
-			<p class="text-white/80 text-xl mt-2">La musica che unisce le
-				voci e i cuori</p>
-		</div>
-	</header>
+<!-- HERO -->
+<header class="h-[60vh] bg-cover bg-center flex items-end relative"
+        id="hero"
+        style="background-image: url('../immagini/coro.jpg'); background-position: center;">
+    <div class="w-full bg-gradient-to-t from-black/80 to-transparent p-10">
+        <h1 class="text-6xl font-bold text-white">Coro Adulti</h1>
+        <p class="text-white/80 text-xl mt-2">La musica che unisce le
+            voci e i cuori</p>
+    </div>
+</header>
 
-	<!-- CONTENUTO -->
-	<div class="relative overflow-hidden">
+<!-- CONTENUTO -->
+<div class="relative overflow-hidden">
 
-		<div
-			class="blob absolute top-10 left-10 w-[350px] h-[350px] bg-blue-400 rounded-full blur-[120px] opacity-30"></div>
-		<div
-			class="blob absolute bottom-20 right-10 w-[350px] h-[350px] bg-purple-400 rounded-full blur-[120px] opacity-30"></div>
+    <div
+            class="blob absolute top-10 left-10 w-[350px] h-[350px] bg-blue-400 rounded-full blur-[120px] opacity-30"></div>
+    <div
+            class="blob absolute bottom-20 right-10 w-[350px] h-[350px] bg-purple-400 rounded-full blur-[120px] opacity-30"></div>
 
-		<main class="px-6 py-24 space-y-24 max-w-6xl mx-auto relative z-10">
+    <main class="px-6 py-24 space-y-24 max-w-6xl mx-auto relative z-10">
 
-			<!-- INTRO -->
-			<section data-aos="fade-up" class="max-w-3xl mx-auto text-center">
-				<p class="text-xl text-gray-700 leading-relaxed">Il Coro Adulti
-					è un gruppo di persone unite dalla passione per il canto e dal
-					desiderio di animare la liturgia attraverso la musica.</p>
-			</section>
+        <!-- INTRO -->
+        <section class="max-w-3xl mx-auto text-center" data-aos="fade-up">
+            <p class="text-xl text-gray-700 leading-relaxed">Il Coro Adulti
+                è un gruppo di persone unite dalla passione per il canto e dal
+                desiderio di animare la liturgia attraverso la musica.</p>
+        </section>
 
-			<!-- GRID -->
-			<section class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- GRID -->
+        <section class="grid md:grid-cols-2 gap-12 items-center">
 
-				<!-- IMMAGINE -->
-				<div data-aos="fade-right" class="relative group">
-					<div
-						class="absolute -inset-2 bg-gradient-to-r from-purple-300 via-blue-200 to-amber-200 rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition"></div>
-					<img src="../immagini/coro.jpg"
-						class="relative rounded-3xl shadow-xl h-[420px] w-full object-cover object-center">
-				</div>
+            <!-- IMMAGINE -->
+            <div class="relative group" data-aos="fade-right">
+                <div
+                        class="absolute -inset-2 bg-gradient-to-r from-purple-300 via-blue-200 to-amber-200 rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition"></div>
+                <img class="relative rounded-3xl shadow-xl h-[420px] w-full object-cover object-center"
+                     src="../immagini/coro.jpg">
+            </div>
 
-				<!-- TESTO -->
-				<div data-aos="fade-left"
-					class="space-y-6 text-gray-700 text-lg leading-relaxed">
-					<p>Il repertorio del coro spazia dai canti liturgici
-						tradizionali a brani più moderni, accompagnando le celebrazioni
-						principali dell’anno e momenti importanti della vita comunitaria.
-					</p>
+            <!-- TESTO -->
+            <div class="space-y-6 text-gray-700 text-lg leading-relaxed"
+                 data-aos="fade-left">
+                <p>Il repertorio del coro spazia dai canti liturgici
+                    tradizionali a brani più moderni, accompagnando le celebrazioni
+                    principali dell’anno e momenti importanti della vita comunitaria.
+                </p>
 
-					<p>Le prove settimanali sono un’occasione non solo per
-						migliorare insieme, ma anche per creare relazioni autentiche e
-						condividere la gioia del canto.</p>
+                <p>Le prove settimanali sono un’occasione non solo per
+                    migliorare insieme, ma anche per creare relazioni autentiche e
+                    condividere la gioia del canto.</p>
 
-					<p>Il coro rappresenta un servizio prezioso per la comunità:
-						attraverso la musica, aiuta a rendere più intensa e partecipata la
-						preghiera.</p>
-				</div>
+                <p>Il coro rappresenta un servizio prezioso per la comunità:
+                    attraverso la musica, aiuta a rendere più intensa e partecipata la
+                    preghiera.</p>
+            </div>
 
-			</section>
+        </section>
 
-			<!-- TESTO FINALE -->
-			<section data-aos="fade-up" class="max-w-3xl mx-auto text-center">
-				<p class="text-xl text-gray-700 leading-relaxed">Chiunque ami
-					cantare è il benvenuto: non è necessario essere esperti, ma avere
-					voglia di mettersi in gioco e condividere questa esperienza.</p>
-			</section>
+        <!-- TESTO FINALE -->
+        <section class="max-w-3xl mx-auto text-center" data-aos="fade-up">
+            <p class="text-xl text-gray-700 leading-relaxed">Chiunque ami
+                cantare è il benvenuto: non è necessario essere esperti, ma avere
+                voglia di mettersi in gioco e condividere questa esperienza.</p>
+        </section>
 
-		</main>
-	</div>
+    </main>
+</div>
 
-	<!-- FOOTER -->
-	<footer
-		class="text-white bg-gradient-to-r from-amber-900 via-amber-800 to-amber-700">
-		<div class="container mx-auto p-6 grid md:grid-cols-3 gap-6">
+<!-- FOOTER -->
+<footer
+        class="text-white bg-gradient-to-r from-amber-900 via-amber-800 to-amber-700">
+    <div class="container mx-auto p-6 grid md:grid-cols-3 gap-6">
 
-			<div>
-				<h3 class="text-lg font-semibold mb-2">Contatti</h3>
-				<p>Email: info@parrocchiasangiovanni.it</p>
-				<p>Tel: +39 012 345 6789</p>
-				<div class="mt-4">
-					<p class="font-semibold">Coro Adulti:</p>
-					<p>Email: coro@parrocchiasangiovanni.it</p>
-				</div>
-			</div>
+        <div>
+            <h3 class="text-lg font-semibold mb-2">Contatti</h3>
+            <p>Email: info@parrocchiasangiovanni.it</p>
+            <p>Tel: +39 012 345 6789</p>
+            <div class="mt-4">
+                <p class="font-semibold">Coro Adulti:</p>
+                <p>Email: coro@parrocchiasangiovanni.it</p>
+            </div>
+        </div>
 
-			<div>
-				<h3 class="text-lg font-semibold mb-2">Orari</h3>
-				<p>Prove: Giovedì ore 20:45</p>
-				<p>Messe: Domenica e festività</p>
-			</div>
+        <div>
+            <h3 class="text-lg font-semibold mb-2">Orari</h3>
+            <p>Prove: Giovedì ore 20:45</p>
+            <p>Messe: Domenica e festività</p>
+        </div>
 
-			<div>
-				<h3 class="text-lg font-semibold mb-2">Dove siamo</h3>
-				<a
-					href="https://www.google.com/maps/place/Calle+Luca+Farra,+1,+34015+Muggia+TS,+Italia"
-					target="_blank" rel="noopener noreferrer"> <iframe
-						class="w-full h-40 rounded pointer-events-none"
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.613458747677!2d13.765094315646604!3d45.60425217910144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ad1e6da3eb5df%3A0x7cd88cd61b02e5b4!2sCalle%20Luca%20Farra%201%2C%2034015%20Muggia%20TS%2C%20Italia!5e0!3m2!1sit!2sit!4v1700000000000!5m2!1sit!2sit"
-						allowfullscreen="" loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade"> </iframe>
-				</a>
-			</div>
+        <div>
+            <h3 class="text-lg font-semibold mb-2">Dove siamo</h3>
+            <a
+                    href="https://www.google.com/maps/place/Calle+Luca+Farra,+1,+34015+Muggia+TS,+Italia"
+                    rel="noopener noreferrer" target="_blank">
+                <iframe
+                        allowfullscreen=""
+                        class="w-full h-40 rounded pointer-events-none"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.613458747677!2d13.765094315646604!3d45.60425217910144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ad1e6da3eb5df%3A0x7cd88cd61b02e5b4!2sCalle%20Luca%20Farra%201%2C%2034015%20Muggia%20TS%2C%20Italia!5e0!3m2!1sit!2sit!4v1700000000000!5m2!1sit!2sit"></iframe>
+            </a>
+        </div>
 
-		</div>
+    </div>
 
-		<div class="text-center p-4 text-sm">© 2026 Parrocchia San
-			Giovanni</div>
-	</footer>
+    <div class="text-center p-4 text-sm">© 2026 Parrocchia San
+        Giovanni
+    </div>
+</footer>
 
-	<script>
-AOS.init({duration:1000,once:true});
+<script>
+    AOS.init({duration: 1000, once: true});
 
-const navbar = document.getElementById("navbar");
-const hero = document.getElementById("hero");
+    const navbar = document.getElementById("navbar");
+    const hero = document.getElementById("hero");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > hero.offsetHeight - 80) {
-    navbar.classList.add("bg-amber-900");
-  } else {
-    navbar.classList.remove("bg-amber-900");
-  }
-});
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > hero.offsetHeight - 80) {
+            navbar.classList.add("bg-amber-900");
+        } else {
+            navbar.classList.remove("bg-amber-900");
+        }
+    });
 </script>
 
 </body>
